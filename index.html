@@ -11,7 +11,7 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Font awesome  -->
     <script
       src="https://kit.fontawesome.com/e3a8441830.js"
@@ -44,61 +44,119 @@
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
+              >Top <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            <a class="nav-link" href="#aboutHeader">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-link" href="#workSection">My Work</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skillsSection">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactSection">Contact</a>
+          </li>
+          
         </ul>
       </div>
     </nav>
     <div class="jumbotron">
-      <h1 class="display-4">Kieran Parkinson, Future web dev...</h1>
-      <p class="lead">
-        This is a simple hero unit, a simple jumbotron-style component for
-        calling extra attention to featured content or information.
-      </p>
+      <h1 class="display-4">Kieran Parkinson</h1>
+      <p class="lead">Future Web Developer...</p>
       <hr class="my-4" />
       <p>
-        It uses utility classes for typography and spacing to space content out
-        within the larger container.
+        This is my portfolio created using Bootstrap to show my projects and my
+        info...
       </p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     </div>
-    <main class="container px-lg-5">
+    <main class="container-fluid px-lg-5">
       <div class="row mx-lg-5">
-        <aside class="col-md-4 col-sm-12 px-md-5 border bg-light">
-          About me
+        <aside class="col-md-4 col-sm-12 px-md-5 border bg-light justify-content-center" id="aboutSection">
+          <h1 class="underline anchorOffset" id="aboutHeader">About me</h1>
+          <h4 class="underline">My Past</h4>
+          <p>
+            My name is Kieran Parkinson and i have previously lived the life of
+            a plumber and gas engineer. Then i was introduced to the world of
+            programming.
+          </p>
+          <h4 class="underline">My Present</h4>
+          <p>
+            My current goal is to become a professional web developer with a
+            beginning language of JavaScript from which i will be pursuing a
+            career path in Web development to further hone and develop my
+            skills.
+          </p>
+          <h4 class="underline">My Future</h4>
+          <p>My future awaits...</p>
         </aside>
-        <section class="col-md-8 col-sm-12 px-md-5 border bg-light">
-          Work section
+        <section class="container col-md-8 col-sm-12 px-md-5 border bg-light" id="workSection">
+          <h2 class=" shadow p-3 mb-2 mt-2 rounded" id="workHeader" >My Work</h2>
+          <div class="row justify-content-between justify-content-around p-3 mb-2 mt-2">
+            <div class="card col-md-7" id="card1" style="width: 18rem">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+                <div class="card col-md-5" id="card2" style="width: 18rem">
+                  <img src="..." class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+          </div>
+          
+          <div class="row justify-content-between justify-content-around p-3 mb-2 mt-2">
+                <div class="card col-md-5" id="card3"  style="width: 18rem">
+                  <img src="..." class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+                <div class="card col-md-7" id="card4"  style="width: 18rem">
+                  <img src="..." class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>
-    <section class="container">Skills section</section>
 
-    <footer class="container d-flex justify-content-around">
+    <section class="jumbotron mt-2" id="skillsSection">
+      <h1 class="display-5 d-flex justify-content-center" >Skills Section</h1>
+      <hr class="my-3" />
+      <p class="lead">
+        From this ongoing bootcamp/course i expect to learn the languages HTML, CSS and JavaScript. These will be actively learnt and practiced by myself in order to ingrain them into my brain. 
+        </p>
+        <p class="lead">
+        Alongside knowledge of these languages i hope to develop and nurture in myself a "programming mindset" so that i can handle programming problems more easily.
+      </p>
+    </section>
+
+    <footer class="container-fluid d-flex justify-content-around border bg-light" id="contactSection">
       <i
         class="fa-3x fa-brands fa-square-twitter pl-5"
         href="#"

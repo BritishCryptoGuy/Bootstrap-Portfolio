@@ -1,3 +1,20 @@
 footer i:hover {
   box-shadow: blueviolet;
 }
+.underline {
+  text-decoration: underline;
+}
+#aboutSection,
+#workHeader {
+  text-align: center;
+}
+#workHeader:before {
+  height: 20px;
+  content: "";
+  display: block;
+}
+
+.anchorOffset {
+  padding-top: 58px;
+  margin-top: -58px;
+}
