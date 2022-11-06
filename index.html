@@ -63,8 +63,8 @@
         </ul>
       </div>
     </nav>
-    <div class="jumbotron">
-      <h1 class="display-4">Kieran Parkinson</h1>
+    <div class="jumbotron text-white">
+      <h1 class="display-4 row justify-content-between">Kieran Parkinson<img id="githubImg" src="css/images/github-logo-Avatar.png" class=""> </h1>
       <p class="lead">Future Web Developer...</p>
       <hr class="my-4" />
       <p>
@@ -74,67 +74,70 @@
     </div>
     <main class="container-fluid px-lg-5">
       <div class="row mx-lg-5">
-        <aside class="col-md-4 col-sm-12 px-md-5 border bg-light justify-content-center" id="aboutSection">
+        <aside class="col-md-4 col-sm-12 px-md-5 border bg-light text-center" id="aboutSection">
           <h1 class="underline anchorOffset" id="aboutHeader">About me</h1>
-          <h4 class="underline">My Past</h4>
-          <p>
+          <h4 class="underline mt-5">My Past</h4>
+          <p class="mt-4">
             My name is Kieran Parkinson and i have previously lived the life of
             a plumber and gas engineer. Then i was introduced to the world of
             programming.
           </p>
-          <h4 class="underline">My Present</h4>
-          <p>
+          <h4 class="underline mt-5">My Present</h4>
+          <p class="mt-4">
             My current goal is to become a professional web developer with a
             beginning language of JavaScript from which i will be pursuing a
             career path in Web development to further hone and develop my
             skills.
           </p>
-          <h4 class="underline">My Future</h4>
-          <p>My future awaits...</p>
+          <h4 class="underline mt-5">My Future</h4>
+          <p class="mt-4">My future awaits...</p>
+          <img class="border border-dark mt-3" src="css/images/Generic-avatar.jpg">
         </aside>
         <section class="container col-md-8 col-sm-12 px-md-5 border bg-light" id="workSection">
           <h2 class=" shadow p-3 mb-2 mt-2 rounded" id="workHeader" >My Work</h2>
           <div class="row justify-content-between justify-content-around p-3 mb-2 mt-2">
             <div class="card col-md-7" id="card1" style="width: 18rem">
-              <img src="..." class="card-img-top" alt="..." />
+              <a href="https://britishcryptoguy.github.io/Bootcamp-Challenge-1-Horiseon/" alt="link to Horiseon challenge"><img src="css/images/Horiseon_smaller.png" class="card-img-top" id="cardImage1" alt="Horiseon" />
+              </a>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Horiseon Project</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  This challenge involved me editing code and implementing semantics
                 </p>
               </div>
             </div>
                 <div class="card col-md-5" id="card2" style="width: 18rem">
-                  <img src="..." class="card-img-top" alt="..." />
+                  <a href="https://britishcryptoguy.github.io/Bootcamp-Challenge-2-Portfolio/" alt="Portfolio page link">
+                  <img src="css/images/Portfolio-page.png" class="card-img-top" id="cardImage2" alt="Portfolio page picture" />
+                  </a>
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Portfolio Page</h5>
                     <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                      This is from a challenge in which i was tasked to create a portfolio page from scratch. This included making it work across multiple media types
                     </p>
                   </div>
                 </div>
           </div>
           
           <div class="row justify-content-between justify-content-around p-3 mb-2 mt-2">
-                <div class="card col-md-5" id="card3"  style="width: 18rem">
-                  <img src="..." class="card-img-top" alt="..." />
+                <div class="card col-md-5" id="card3"  style="width: 18rem"><a href="#" alt="placeholder image">
+                  <img src="css/images/placeholder-img1.jpg" class="card-img-top" alt="Placeholder image 1" id="cardImage3" />
+                  </a>
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Placeholder 1</h5>
                     <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                      Placeholder text goes here
                     </p>
                   </div>
                 </div>
                 <div class="card col-md-7" id="card4"  style="width: 18rem">
-                  <img src="..." class="card-img-top" alt="..." />
+                  <a href="#" alt="Placeholder image 2">
+                  <img src="css/images/placeholder-img2.jpg" class="card-img-top" id="cardImage3" alt="Placeholder image 2" />
+                  </a>
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Placeholder image 2</h5>
                     <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                      Placeholder text goes here
                     </p>
                   </div>
                 </div>
@@ -145,7 +148,7 @@
       </div>
     </main>
 
-    <section class="jumbotron mt-2" id="skillsSection">
+    <section class="jumbotron mt-2 text-white" id="skillsSection">
       <h1 class="display-5 d-flex justify-content-center" >Skills Section</h1>
       <hr class="my-3" />
       <p class="lead">
@@ -157,21 +160,48 @@
     </section>
 
     <footer class="container-fluid d-flex justify-content-around border bg-light" id="contactSection">
+      <button type="button" class="btn btn-primary bg-light border-light ">
+      <a href="#" alt="Twitter Link(not included)">
       <i
-        class="fa-3x fa-brands fa-square-twitter pl-5"
+        class="fa-3x fa-brands fa-square-twitter"
         href="#"
         src="https://fontawesome.com/icons/envelope?s=solid&f=classic"
       ></i>
+      </a>
+      </button>
+      <button type="button" class="btn btn-primary bg-light border-light ">
+      <a href="https://github.com/BritishCryptoGuy" alt="Github link" >
       <i
         class="fa-3x fa-brands fa-square-github"
-        href="#"
         src="https://fontawesome.com/icons/envelope?s=solid&f=classic"
       ></i>
-      <i
+      </a>
+    </button>
+      <!-- <i
         class="fa-3x fa-solid fa-envelope pr-5"
         src="https://fontawesome.com/icons/envelope?s=solid&f=classic"
+      ></i> -->
+      <!-- Small modal -->
+<button type="button" class="btn btn-primary bg-light border-light " data-toggle="modal" data-target=".bd-example-modal-sm">
+  <a alt="email">
+
+  <i
+        class="fa-3x fa-solid fa-square-envelope"
+        src="https://fontawesome.com/icons/envelope?s=solid&f=classic" id="envelope"
       ></i>
+  </a>
+</button>
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      Email: Kieran_parkinson@hotmail.com
+    </div>
+  </div>
+</div>
+
+      </a>
     </footer>
+    
     <!-- Bootstrap JS  -->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

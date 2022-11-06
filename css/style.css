@@ -1,8 +1,21 @@
+:root {
+  --myPlum: rgba(107, 15, 26, 0.8);
+}
 footer i:hover {
-  box-shadow: blueviolet;
+  color: black;
+}
+#envelope:hover {
+  color: black;
 }
 .underline {
   text-decoration: underline;
+}
+
+.jumbotron {
+  background-color: var(--myPlum);
+}
+#githubImg {
+  height: 150px;
 }
 #aboutSection,
 #workHeader {
@@ -13,8 +26,24 @@ footer i:hover {
   content: "";
   display: block;
 }
+#cardImage1,
+#cardImage2,
+#cardImage3,
+#cardImage4 {
+  max-height: 200px;
+}
 
 .anchorOffset {
   padding-top: 58px;
   margin-top: -58px;
+}
+footer a,
+#envelope {
+  color: var(--myPlum);
+}
+
+@media (max-width: 600px) {
+  #githubImg {
+    display: none;
+  }
 }
