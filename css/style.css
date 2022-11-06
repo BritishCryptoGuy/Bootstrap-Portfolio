@@ -10,7 +10,9 @@ footer i:hover {
 .underline {
   text-decoration: underline;
 }
-
+li a:hover {
+  box-shadow: 2px 0px var(--myPlum);
+}
 .jumbotron {
   background-color: var(--myPlum);
 }
@@ -32,7 +34,11 @@ footer i:hover {
 #cardImage4 {
   max-height: 200px;
 }
-
+.cardLinks:hover {
+  color: var(--myPlum);
+  border: solid var(--myPlum) 3px;
+  opacity: 0.5;
+}
 .anchorOffset {
   padding-top: 58px;
   margin-top: -58px;
@@ -46,4 +52,27 @@ footer a,
   #githubImg {
     display: none;
   }
+}
+
+a {
+  position: relative;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--myPlum);
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
