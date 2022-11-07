@@ -1,21 +1,21 @@
+/* Root CSS  */
 :root {
   --myPlum: rgba(107, 15, 26, 0.8);
 }
-footer i:hover {
-  color: black;
-}
-#envelope:hover {
-  color: black;
-}
+/* Classes */
 .underline {
   text-decoration: underline;
 }
+
+/* Nav Link css */
 li a:hover {
   box-shadow: 2px 0px var(--myPlum);
 }
+/* Jumbotron css */
 .jumbotron {
   background-color: var(--myPlum);
 }
+/* Main Section  */
 #githubImg {
   height: 150px;
 }
@@ -43,21 +43,18 @@ li a:hover {
   padding-top: 58px;
   margin-top: -58px;
 }
+
+/* Link specific css  */
 footer a,
 #envelope {
   color: var(--myPlum);
 }
-
-@media (max-width: 600px) {
-  #githubImg {
-    display: none;
-  }
+#envelope:hover {
+  color: black;
 }
-
 a {
   position: relative;
 }
-
 a::before {
   content: "";
   position: absolute;
@@ -71,8 +68,19 @@ a::before {
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
-
 a:hover::before {
   transform-origin: left;
   transform: scaleX(1);
+}
+
+/* Footer css  */
+footer i:hover {
+  color: black;
+}
+
+/* Media */
+@media (max-width: 600px) {
+  #githubImg {
+    display: none;
+  }
 }
