@@ -7,7 +7,7 @@
   text-decoration: underline;
 }
 
-/* Nav Link css */
+/* Nav css */
 li a:hover {
   box-shadow: 2px 0px var(--myPlum);
 }
@@ -16,6 +16,9 @@ li a:hover {
   background-color: var(--myPlum);
 }
 /* Main Section  */
+main {
+  color: var(--myPlum);
+}
 #githubImg {
   height: 150px;
 }
