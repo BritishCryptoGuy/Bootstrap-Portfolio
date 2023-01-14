@@ -1,4 +1,4 @@
-# Bootcamp Challenge 3- Bootstrap-Portfolio
+# Bootstrap-Portfolio
 
 ## Skills for life Bootcamp Challenge 03 (Bootstrap Portfolio) short description
 
